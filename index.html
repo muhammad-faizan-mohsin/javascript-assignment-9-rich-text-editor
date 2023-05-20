@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+
+<div class="main">
+<div class="then">
+  <section class="wrapper">
+    <div class="top">Style Your Text</div>
+    <div class="bottom" aria-hidden="true">Style Your Text</div>
+  </section>
+  <p id="myParagraph">Hello World</p>
+
+<div class="options">
+
+
+
+  <select id="fontSizeSelect" onchange="changeFontSize()">
+    <option value="select" selected disabled> Font Size</option>
+    <option value="14">14</option>
+    <option value="18">18</option>
+    <option value="22">22</option>
+    <option value="26">26</option>
+    <option value="30">30</option>
+    <option value="35">35</option>
+    <option value="40">40</option>
+    <option value="45">45</option>
+  </select>
+
+  <select id="fontBoldSelect" onchange="changeFontBold()">
+    <option value="select" selected disabled> Font Weight</option>
+    <option value="900">bolder</option>
+    <option value="lighter">lighter</option>
+  </select>
+
+
+  <select id="fontFamilySelect" onchange="changeFontFamily()">
+    <option value="select" selected disabled> Font Family</option>
+    <option value="Helvetica">Helvetica</option>
+    <option value="Georgia">Georgia </option>
+    <option value="monospace">monospace </option>
+
+  </select>
+
+  <select id="textShadowSelect" onchange="changetextShadow()">
+    <option value="select" selected disabled> Text Shadow</option>
+    <option value="2px 2px 3px red">red Shadow</option>
+    <option value="2px 2px 3px black">Black Shadow</option>
+    <option value="2px 2px 3px white">White Shadow</option>
+    
+    <option value="none">no </option>
+  </div>
+  </select>
+
+  <select id="fontStyleSelect" onchange="changeStyleFamily()">
+    <option value="select" selected disabled> Font Style</option>
+    <option value="italic">italic</option>
+    <option value="normal">normal </option>
+
+  </select>
+  <div class="clr-">
+  <input type="color" id="fontclr" oninput="changeclr()" class="input-clr"> 
+</div>
+</div>
+</div>
+    <script src="app.js"></script>
+</body>
+</html>

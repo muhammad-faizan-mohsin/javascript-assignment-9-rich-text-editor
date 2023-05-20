@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(./img/3d-render-of-rgb-neon-light-on-darkness-background-abstract-laser-lines-show-at-night-ultraviolet-spectrum-beam-scene-free-photo.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+select {
+  background-color: rgba(0, 0, 0, 0.466)  ;
+  color: white;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 10px;
+  width: 160px;
+  font-size: large;
+}
+select > option{
+background-color: rgb(0, 0, 0);
+
+}
+.options{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+p{
+    margin-bottom: 20px;
+    color: white;
+    font-size: 35px;
+}
+
+.then{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.507);
+    padding: 50px;
+    margin: 50px;
+    border-radius: 20px;
+}
+.wrapper {
+    display: grid;
+    place-content: center;
+    background-color: var(--background-color);
+   
+    font-family: "Oswald", sans-serif;
+    font-size:80px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--text-color);
+    margin-bottom: 20px;
+  }
+  
+  .wrapper > div {
+    grid-area: 1/1/-1/-1;
+  }
+  .top {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 48%, 0% 58%);
+color: #e41af7;
+  }
+  .bottom {
+    clip-path: polygon(0% 60%, 100% 50%, 100% 100%, 0% 100%);
+    color: white;
+    background: -webkit-linear-gradient(177deg, rgb(0, 0, 0) 53%, var(--text-color) 65%);
+    background: linear-gradient(177deg, rgb(0, 0, 0) 53%, var(--text-color) 65%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    transform: translateX(-0.02em);
+  }
+  .input-clr{
+    background-color: transparent;
+   height: 50px;
+   width: 170px;
+
+
+    border: none;
+   
+  }
+ .input-clr::-webkit-color-swatch{
+  border-radius: 50px;
+ }
+  @media screen and (max-width:650px) {
+    .wrapper {
+        font-size:20px;
+    }
+    .options{
+      display: block;
+    }
+  }
